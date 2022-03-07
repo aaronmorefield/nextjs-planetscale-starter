@@ -54,3 +54,100 @@ blockquote {
 a {
   @apply text-blue-300;
 }
+
+.reviewNumbers {
+  border-bottom: black thin solid;
+  border-top: black thin solid;
+  border-right: darkgray thin solid;
+  padding: 10px;
+  display: inline;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.reviewNumbers:first-child {
+  border: black thin solid;
+  border-right: darkgray thin solid;
+  border-radius: 5px 0 0 5px;
+}
+
+.reviewNumbers:last-child {
+  border: black thin solid;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+}
+
+.reviewNumbers.previous {
+  background-color: #c2d5d5;
+}
+
+
+.reviewNumbers.previous-score {
+  background-color: #e0c5a4;
+}
+
+/*.reviewNumbers.active {*/
+/*  background-color: #e0c5a4;*/
+/*}*/
+
+.reviewNumbers.under-score {
+  background-color: #d6dcba;
+}
+
+.reviewNumbers.current-score {
+  background-color: #afb69a;
+}
+
+.reviewNumbers.previous-score.current-score {
+  background: repeating-linear-gradient(
+          45deg,
+          #afb69a,
+          #afb69a 10px,
+          #e0c5a4 10px,
+          #e0c5a4 20px
+  );
+}
+
+.reviewNumbers.previous-score.under-score {
+  background: repeating-linear-gradient(
+          45deg,
+          #d6dcba,
+          #d6dcba 10px,
+          #e0c5a4 10px,
+          #e0c5a4 20px
+  );
+}
+
+.reviewNumbers:hover {
+  background-color: #afb696;
+}
+.reviewButtonsContainer {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.reviewBlock button {
+  background-color: #9f9f9f;
+  width: 100px;
+  border: darkgray solid 1px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.reviewBlock button {
+  background-color: #9f9f9f;
+  width: 100px;
+  border: #757575 solid 1px;
+  padding: 10px;
+  font-size: 10pt;
+  color: #000000;
+  border-radius: 10px;
+  margin: 15px;
+}
+
+.reviewBlock button:last-child {
+  background-color: #abffc1;
+  border: #549465 solid 1px;
+}

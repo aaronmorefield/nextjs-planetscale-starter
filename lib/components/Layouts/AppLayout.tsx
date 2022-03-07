@@ -25,6 +25,10 @@ const AppLayout = (props) => {
       href: "/client",
     },
     {
+      title: "Review",
+      href: "/reviewpage",
+    },
+    {
       title: "Server",
       href: "/server",
     },

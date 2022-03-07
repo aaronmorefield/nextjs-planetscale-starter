@@ -59,6 +59,19 @@ model User {
     sessions      Session[]
 }
 
+model Question {
+    id            String    @id @default(cuid())
+    createdAt     DateTime  @default(now())
+    updatedAt     DateTime  @updatedAt
+    text          String?
+}
+model Response {
+    id            String    @id @default(cuid())
+    questionId    Question
+    updatedAt     DateTime  @updatedAt
+    text          String?
+}
+
 model VerificationToken {
     identifier String
     token      String   @unique
